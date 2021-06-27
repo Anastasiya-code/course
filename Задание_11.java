@@ -5,21 +5,22 @@ public class Задание_11 {
 
     public static void main(String[] args) {
         System.out.println("Введите первое число");
-        int x = scanner.nextInt();
+        double x = scanner.nextDouble();
         String str;
-        str = Integer.toString(x);
+        str = Double.toString(x);
         scanner.nextLine();
         System.out.println("Введите второе число");
-        int y = scanner.nextInt();
+        double y = scanner.nextDouble();
+        int d1 = (int) y;
         if (x > y) {
             System.out.println("Большее число: " + x);
-            double d1 = (double) y;
-            System.out.println("Меньшее число: " + d1);
+            double d2 = (double) y;
+            System.out.println("Меньшее число: " + d2);
         }
         else if (y > x) {
             System.out.println("Большее число: " + y);
-            Double d2 = new Double(str);
-            System.out.println("Меньшее число: " + d2);
+            Double d3 = new Double(str);
+            System.out.println("Меньшее число: " + d3);
         }
     }
 }
