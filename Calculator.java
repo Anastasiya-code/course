@@ -5,10 +5,10 @@ public class Calculator {
 
     public static void main(String[] args) {
         System.out.println("Введите число");
-        int num1 = scanner.nextInt();
-        int num2 = scanner.nextInt();
+        double num1 = scanner.nextDouble();
+        double num2 = scanner.nextDouble();
         char operation = getOperation();
-        int result = calc(num1,num2,operation);
+        double result = calc(num1, num2, operation);
         System.out.println("Результат операции: "+result);
     }
 
@@ -25,8 +25,8 @@ public class Calculator {
         return operation;
     }
 
-    public static int calc(int num1, int num2, char operation){
-        int result;
+    public static double calc(double num1, double num2, char operation){
+        double result;
         switch (operation){
             case '+':
                 result = num1+num2;
