@@ -17,7 +17,7 @@ public class Задание_10 {
             }
         }
         for (int i = 0; i < size1; i++) {
-            System.out.print((arr [i] [0] * 3) + " ");
+            System.out.print((arr [0] [i] * 3) + " ");
         }
     }
 }
