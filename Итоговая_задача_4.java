@@ -28,6 +28,7 @@ public class Итоговая_задача_4 {
                     }
                     if (i > 1) {
                         System.out.println("Подсказка уже недоступна");
+                        i--;
                         continue;
                     }
                 default:
